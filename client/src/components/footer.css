@@ -1,0 +1,24 @@
+/* footer.css */
+.footer {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 15px; /* Add space between icons */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .social-icon:hover {
+    transform: translateY(-5px); /* Move the icon up on hover */
+  }
+  
+ 
+  

@@ -1,0 +1,36 @@
+.portfolio-image {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .image-container {
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .btn-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-hover:hover {
+    background-color: #155724;
+    transform: translateY(-2px);
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: #28a745; /* Success color for bold title */
+  }
+  
+  .card-body {
+    text-align: left; /* Align all text to the left */
+  }
+  
+  .text-muted {
+    font-size: 0.9rem; /* Smaller font size for muted text */
+  }
+  

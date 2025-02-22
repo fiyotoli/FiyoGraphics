@@ -1,0 +1,33 @@
+* {
+  margin: 0;                /* Remove default margin */
+  padding: 0;               /* Remove default padding */
+  box-sizing: border-box;   /* Include padding and border in total width and height */
+}
+
+/* Ensure html and body fill the viewport */
+html, body {
+  min-width: 100%;             /* Set width to 100% of the viewport */
+  min-height: 100%;             /* Set height to 100% of the viewport */
+  overflow-x: hidden;       /* Prevent horizontal scrolling */
+       /* Allow vertical scrolling if necessary */
+}
+/* Remove the default border around the menu icon */
+.navbar-toggler {
+  background-color: transparent; /* Remove background */
+  border: none !important; /* Remove border */
+}
+
+/* Change the color of the menu icon when clicked (collapsed) */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  color: #28a745 !important; /* Success color for the icon */
+}
+
+/* Remove any box-shadow when the menu icon is focused */
+.navbar-toggler:focus {
+  box-shadow: none !important; /* Remove box shadow */
+}
+
+/* Optionally, remove any transition effect */
+.navbar-toggler-icon {
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
