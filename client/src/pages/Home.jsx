@@ -5,7 +5,7 @@ import Skill from '../components/Skill'
 import Portfolio from '../components/Portfolio'
 import Blog from '../components/Blog'
 import Testimony from '../components/Testimony'
-import Contact from '../components/contact'
+import Contact from '../components/Contact'
 import Faq from '../components/Faq'
 import Hero from '../components/Hero'
 
