@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import AddProduct from "./pages/addProduct";
 import { ToastContainer } from "react-toastify";
 import ProductDetail from "./pages/ProductDetail";
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,7 @@ const App = () => {
         {/* Admin routes */}
         <Route path="/" element={<Home />} />
         <Route path="/add" element={<AddProduct />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes> {/* ✅ Fixed closing tag */}
 
