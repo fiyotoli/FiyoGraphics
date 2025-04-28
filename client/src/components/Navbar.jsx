@@ -42,7 +42,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 ${navbarShadow ? "shadow-lg" : ""}`}>
+    <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-lg  fixed-top py-3 ${navbarShadow ? "shadow-lg" : ""}`}>
       <div className="container">
         <a className="navbar-brand fw-bold" href="#" onClick={() => setIsCollapsed(true)}>
           <span className="text-danger fw-bold">Fiyo</span>Graphics

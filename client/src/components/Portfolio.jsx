@@ -52,7 +52,7 @@ function Portfolio() {
 Portfolio
 </button>
       <div className="text-center mb-4">
-        {['', 'infographic', 'poster', 'card', 'flyer', 'logo', 'branding'].map((category, index) => (
+        {['', 'infographic', 'poster', 'card', 'flyer', 'logo', 'branding','typography'].map((category, index) => (
           <button 
             key={index} 
             className={`btn mx-2 ${filter === category ? 'btn-success' : 'btn-outline-success'}`} 
