@@ -25,6 +25,10 @@ const App = () => {
   if (isLoading) {
     return (
       <div className="d-flex justify-content-center align-items-center vh-100">
+        <button className="btn btn-success mx-2" type="button" disabled>
+          <span className="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+          <span className="ms-2"></span>
+        </button>
         <button className="btn btn-success" type="button" disabled>
           <span className="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
           <span className="ms-2">Loading...</span>
