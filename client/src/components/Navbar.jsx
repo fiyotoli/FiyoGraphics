@@ -63,7 +63,7 @@ const Navbar = () => {
 
         <div className={`collapse navbar-collapse ${isCollapsed ? "" : "show"}`} id="navbarNav">
           <ul className="navbar-nav mx-auto ">
-            {["about", "services", "portfolio", "blog"].map((section) => (
+            {["about", "skills", "portfolio", "blog"].map((section) => (
               <li className="nav-item mb-2 mb-sm-0" key={section}>
                 <Link
                   to={section}

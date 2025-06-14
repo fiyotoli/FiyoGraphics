@@ -52,7 +52,7 @@ function Portfolio() {
 Portfolio
 </button>
       <div className="text-center mb-4 ">
-        {['', 'infographic', 'poster', 'card', 'flyer', 'logo', 'branding','typography'].map((category, index) => (
+        {['', 'infographic', 'poster', 'card', 'flyer', 'logo', 'branding'].map((category, index) => (
           <button 
             key={index} 
             className={`btn mx-2 my-1 ${filter === category ? 'btn-success' : 'btn-outline-success'}`} 
@@ -64,7 +64,7 @@ Portfolio
       </div>
       <div className="row">
         {currentItems.length === 0 ? (
-          <p>No products available</p>
+          <p>No design available</p>
         ) : (
           currentItems.map((product, index) => (
             <div className="col-md-6 col-lg-4 mb-4" key={index}>
