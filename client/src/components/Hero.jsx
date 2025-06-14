@@ -1,11 +1,12 @@
 import React from "react";
-import heroImage from "../assets/hero.png"; // Import the image
+import heroImage from "../assets/hero12.png"; // Import the image
 import resume from "../assets/resume.png"; // Import the resume image
 import { Typewriter } from "react-simple-typewriter"; // Import Typewriter
 import { FaStar } from "react-icons/fa"; // React Icon for subtitle
 
 const Hero = () => {
   return (
+    <div className=" pt-4">
     <div className="container d-flex flex-column flex-md-row align-items-center mt-5 pt-5" >
       {/* Left Section */}
       <div className="col-12 col-md-6 text-start mb-4 mb-md-0">
@@ -14,17 +15,17 @@ const Hero = () => {
           className="d-inline-flex align-items-center mb-3 px-3 py-2 bg-white shadow rounded"
           style={{ maxWidth: "fit-content" }}
         >
-          <FaStar className="text-warning me-2" />
+          <FaStar className="text-success me-2" />
           <span className="fw-bold">Graphic Designer Extraordinaire</span>
         </div>
 
         {/* Dynamic Header with Typewriter Effect */}
-        <h1 className="display-3 text-success">
+        <h1 className="display-5 fw-bold text-dark">
           <Typewriter
             words={[
-              "Welcome to My Portfolio",
+              "Welcome to FiyoGraphics",
               "I Design Stunning Graphics",
-              "Let's Build Something Amazing",
+              "Let's Build Something Great",
             ]}
             loop={0} // Infinite loop
             cursor
@@ -36,7 +37,7 @@ const Hero = () => {
         </h1>
 
         {/* Description */}
-        <p className="lead text-muted">
+        <p className="lead " style={{ fontSize: '17px',opacity:".8" }}>
           Hi, I'm a passionate graphic designer with a flair for creating
           stunning visuals and unique designs. Explore my work and let’s create
           something amazing together.
@@ -53,7 +54,7 @@ const Hero = () => {
           </a>
           <a
             href="#portfolio" // Direct path to the portfolio section
-            className="btn border border-success btn-lg mb-3"
+            className="btn border  border-success btn-lg mb-3"
           >
             Portfolio
           </a>
@@ -69,6 +70,7 @@ const Hero = () => {
           style={{ maxWidth: "90%", height: "auto" }}
         />
       </div>
+    </div>
     </div>
   );
 };

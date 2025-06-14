@@ -38,10 +38,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mt-5 pt-5" id="contact">
+    <div className="container mt-5 pt-5 " id="contact">
       <div className="row">
         {/* Left Section: Contact Form */}
-        <div className="col-md-6">
+        <div className="col-md-6 mb-5">
           <form
             ref={form}
             onSubmit={sendEmail}

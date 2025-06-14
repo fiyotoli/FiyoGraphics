@@ -3,7 +3,7 @@ import { FaPaintBrush, FaPalette, FaBullhorn } from "react-icons/fa"; // Importi
 
 const Services = () => {
   return (
-    <div id="services" className="container text-center my-5 pt-5">
+    <div id="services" className="container text-center mt-4 pt-5 ">
      <button className="btn mb-4 mt-5 btn-outline-success shadow-sm">
   My Services
 </button>

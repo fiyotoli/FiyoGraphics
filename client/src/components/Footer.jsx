@@ -7,8 +7,14 @@ const Footer = () => {
     <footer className="footer bg-light text-center py-5">
       <div className="container">
         {/* Text Logo */}
-        <a className="navbar-brand fw-bold" href="#" onClick={() => setIsCollapsed(true)}>
-          <span className="text-danger fw-bold">Fiyo</span>Graphics
+        <a className="navbar-brand  fw-bold" href="#" onClick={() => setIsCollapsed(true)}>
+          <h3 className="fw-bold">
+
+<span className="text-success  fw-bold">Fiyo</span>Graphics
+
+          </h3>
+          
+          
         </a>
         {/* Description Paragraph */}
         <p className="text-muted">
@@ -25,7 +31,7 @@ const Footer = () => {
             className="social-icon"
             aria-label="LinkedIn"
           >
-            <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center shadow me-3" style={{ width: '50px', height: '50px' }}>
+            <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center shadow me-2" style={{ width: '50px', height: '50px' }}>
               <FaLinkedinIn size={24} />
             </div>
           </a>
@@ -38,7 +44,7 @@ const Footer = () => {
             className="social-icon"
             aria-label="Telegram"
           >
-            <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center shadow me-3" style={{ width: '50px', height: '50px' }}>
+            <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center shadow me-2" style={{ width: '50px', height: '50px' }}>
               <FaTelegramPlane size={24} />
             </div>
           </a>
@@ -51,7 +57,7 @@ const Footer = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-  <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center shadow me-3" style={{ width: '50px', height: '50px' }}>
+  <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center shadow me-2" style={{ width: '50px', height: '50px' }}>
     <FaEnvelope size={24} />
   </div>
 </a>
@@ -60,7 +66,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-muted mb-0">
-          &copy; {new Date().getFullYear()} MyPortfolio. All rights reserved.
+          &copy; {new Date().getFullYear()} FiyoGraphics. All rights reserved.
         </p>
       </div>
     </footer>

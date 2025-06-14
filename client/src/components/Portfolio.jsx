@@ -47,15 +47,15 @@ function Portfolio() {
   }
 
   return (
-    <div className="container mt-5 pt-5  text-center" id="portfolio">
+    <div className="container  text-center mt-5 pt-5" id="portfolio">
      <button className="btn mb-4 mt-5 btn-outline-success shadow-sm">
 Portfolio
 </button>
-      <div className="text-center mb-4">
+      <div className="text-center mb-4 ">
         {['', 'infographic', 'poster', 'card', 'flyer', 'logo', 'branding','typography'].map((category, index) => (
           <button 
             key={index} 
-            className={`btn mx-2 ${filter === category ? 'btn-success' : 'btn-outline-success'}`} 
+            className={`btn mx-2 my-1 ${filter === category ? 'btn-success' : 'btn-outline-success'}`} 
             onClick={() => setFilter(category)}
           >
             {category === '' ? 'Show All' : category.charAt(0).toUpperCase() + category.slice(1)}

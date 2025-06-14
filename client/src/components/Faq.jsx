@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Accordion, Container, Row, Col, Image } from 'react-bootstrap';
 import { FaQuestionCircle, FaPlus } from 'react-icons/fa'; // Importing the circular question mark and plus icons
-import faqImage from '../assets/faq.jpg'; 
+import faqImage from '../assets/faq.png'; 
 import "./Faq.css" // Adjust the path based on your project structure
 
 const Faq = () => {
@@ -12,7 +12,7 @@ const Faq = () => {
   };
 
   return (
-    <Container fluid className="mt-5 pt-5 ">
+    <Container  className="mt-5 pt-5 ">
       <Row className="align-items-center">
         {/* Left Section: Image */}
         <Col lg={6} md={6} sm={12} className="mb-4">

@@ -4,7 +4,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 const Skill = () => {
   return (
-    <div id="skills" className="container  text-center my-5">
+    <div id="skills" className="container  text-center mt-5">
     <button className="btn mb-4  btn-outline-success shadow-sm">
   My Skills
 </button>

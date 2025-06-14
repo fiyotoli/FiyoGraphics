@@ -42,10 +42,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm  fixed-top py-3 ${navbarShadow ? "shadow-lg" : ""}`}>
+    <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm  fixed-top py-4 ${navbarShadow ? "shadow-lg" : ""}`}>
       <div className="container">
         <a className="navbar-brand fw-bold" href="#" onClick={() => setIsCollapsed(true)}>
-          <span className="text-danger fw-bold">Fiyo</span>Graphics
+          <span className="text-success fw-bold">Fiyo</span>Graphics
         </a>
 
         <button
@@ -62,7 +62,7 @@ const Navbar = () => {
         </button>
 
         <div className={`collapse navbar-collapse ${isCollapsed ? "" : "show"}`} id="navbarNav">
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav mx-auto ">
             {["about", "services", "portfolio", "blog"].map((section) => (
               <li className="nav-item mb-2 mb-sm-0" key={section}>
                 <Link
@@ -79,7 +79,8 @@ const Navbar = () => {
           </ul>
 
           <div className="d-flex">
-            <a href="#contact" className="btn btn-success rounded-pill">
+            <a href="#contact" className="btn btn-success rounded">
+              
               Contact
             </a>
           </div>
