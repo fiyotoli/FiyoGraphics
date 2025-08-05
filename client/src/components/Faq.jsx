@@ -27,7 +27,7 @@ Faq ?
             {[
               {
                 question: "What design software do you use?",
-                answer: "I primarily use Adobe Creative Suite, including Photoshop, Illustrator, and InDesign. Depending on the project, I may also use tools like Figma or Canva.",
+                answer: "I primarily use Adobe Creative Suite, including Photoshop, Illustrator and Figma. Depending on the project, I may also use tools like Canva.",
                 eventKey: "0",
               },
               {

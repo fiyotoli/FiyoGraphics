@@ -19,7 +19,7 @@ const Services = () => {
               </p>
               <h3 className="card-title">Design</h3>
               <p className="text-muted">
-                We create stunning visuals, from logos to full branding solutions. Our design services bring your ideas to life.
+                I create stunning visuals, from logos to full branding solutions. My design services bring your ideas to life.
               </p>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Services = () => {
               </p>
               <h3 className="card-title text-white">Professional Graphics Designer</h3>
               <p className="text-white">
-                Our professional graphic designers specialize in creating visually stunning and effective designs to elevate your brand.
+                My professional graphic design services specialize in creating visually stunning and effective designs to elevate your brand.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Services = () => {
               </p>
               <h3 className="card-title">Branding</h3>
               <p className="text-muted">
-                Our branding services help you establish a strong presence and create a lasting impact in your industry.
+                My branding services help you establish a strong presence and create a lasting impact in your industry.
               </p>
             </div>
           </div>

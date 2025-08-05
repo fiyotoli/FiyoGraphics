@@ -51,14 +51,14 @@ const Skill = () => {
                 <FaGraduationCap className="me-2" /> Education
               </h5>
               <p className="card-text mb-3">
-                I hold a Bachelor's degree in Graphic Design from XYZ University.
+               I am certified in Graphic Design from Ennlite Academy.
                 Additionally, I've completed various certification courses in
                 graphic design tools and web design.
               </p>
               <ul>
                 <li className="d-flex align-items-center">
                   <IoIosArrowDroprightCircle className="me-2 text-success" />{" "}
-                  Bachelor's in Graphic Design
+                  Graphic Design Certified
                 </li>
                 <li className="d-flex align-items-center">
                   <IoIosArrowDroprightCircle className="me-2 text-success" />{" "}
@@ -67,6 +67,10 @@ const Skill = () => {
                 <li className="d-flex align-items-center">
                   <IoIosArrowDroprightCircle className="me-2 text-success" />{" "}
                   Web Design Certification
+                </li>
+                <li className="d-flex align-items-center">
+                  <IoIosArrowDroprightCircle className="me-2 text-success" />{" "}
+                Currently studying Marketing Management
                 </li>
               </ul>
             </div>

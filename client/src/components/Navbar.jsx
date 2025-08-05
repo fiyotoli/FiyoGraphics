@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import logo from "../assets/fiyo2.png";  // <-- Import the logo image
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const [navbarShadow, setNavbarShadow] = useState(false); // Track shadow state
+  const [navbarShadow, setNavbarShadow] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,10 +43,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm  fixed-top py-4 ${navbarShadow ? "shadow-lg" : ""}`}>
+    <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3 ${navbarShadow ? "shadow-lg" : ""}`}>
       <div className="container">
         <a className="navbar-brand fw-bold" href="#" onClick={() => setIsCollapsed(true)}>
-          <span className="text-success fw-bold">Fiyo</span>Graphics
+          <img src={logo} alt="Logo" style={{ height: "40px", width:'auto'}} /> {/* logo image here */}
         </a>
 
         <button
@@ -80,7 +81,6 @@ const Navbar = () => {
 
           <div className="d-flex">
             <a href="#contact" className="btn btn-success rounded">
-              
               Contact
             </a>
           </div>

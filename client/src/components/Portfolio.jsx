@@ -13,9 +13,11 @@ function Portfolio() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
+  // Fetch products only once when component mounts
   useEffect(() => {
     fetchProducts();
-  }, [fetchProducts]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (filter === '') {
@@ -47,15 +49,15 @@ function Portfolio() {
   }
 
   return (
-    <div className="container  text-center mt-5 pt-5" id="portfolio">
-     <button className="btn mb-4 mt-5 btn-outline-success shadow-sm">
-Portfolio
-</button>
-      <div className="text-center mb-4 ">
-        {['', 'infographic', 'poster', 'card', 'flyer', 'logo', 'branding'].map((category, index) => (
-          <button 
-            key={index} 
-            className={`btn mx-2 my-1 ${filter === category ? 'btn-success' : 'btn-outline-success'}`} 
+    <div className="container text-center mt-5 pt-5" id="portfolio">
+      <button className="btn mb-4 mt-5 btn-outline-success shadow-sm">
+        Portfolio
+      </button>
+      <div className="text-center mb-4">
+        {['', 'poster', 'infographic', 'card', 'flyer', 'logo', 'branding'].map((category, index) => (
+          <button
+            key={index}
+            className={`btn mx-2 my-1 ${filter === category ? 'btn-success' : 'btn-outline-success'}`}
             onClick={() => setFilter(category)}
           >
             {category === '' ? 'Show All' : category.charAt(0).toUpperCase() + category.slice(1)}
@@ -78,24 +80,35 @@ Portfolio
                 <div className="card-body">
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text text-muted">{product.date} <span className="mx-2"></span> {product.time}</p>
-                   </div>
+                </div>
               </div>
             </div>
           ))
         )}
       </div>
+
+      {/* Pagination */}
       <div className="d-flex justify-content-center mt-4">
         {Array.from({ length: totalPages }, (_, i) => (
-          <button key={i} className={`btn mx-1 ${currentPage === i + 1 ? 'btn-success' : 'btn-outline-success'}`} onClick={() => setCurrentPage(i + 1)}>
+          <button
+            key={i}
+            className={`btn mx-1 ${currentPage === i + 1 ? 'btn-success' : 'btn-outline-success'}`}
+            onClick={() => setCurrentPage(i + 1)}
+          >
             {i + 1}
           </button>
         ))}
         {currentPage < totalPages && (
-          <button className="btn btn-outline-success mx-2" onClick={() => setCurrentPage(currentPage + 1)}>
+          <button
+            className="btn btn-outline-success mx-2"
+            onClick={() => setCurrentPage(currentPage + 1)}
+          >
             Next
           </button>
         )}
       </div>
+
+      {/* Modal */}
       {showModal && selectedProduct && (
         <div className="modal fade show d-block" tabIndex="-1">
           <div className="modal-dialog">
